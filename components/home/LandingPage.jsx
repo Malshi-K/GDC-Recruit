@@ -1,43 +1,12 @@
 import React from "react";
-import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
-import Header from "./Header";
-import AboutSection from "./AboutSection";
-import ContactSection from "./ContactSection";
-import UserTypeSelection from "./UserTypeSelection";
-import Footer from "./Footer";
-
-const ServiceCard = ({ title, description, icon }) => (
-  <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg hover:transform hover:-translate-y-1 transition-all duration-300">
-    <div className="text-primary-600 mb-4">{icon}</div>
-    <h3 className="text-xl font-semibold mb-3">{title}</h3>
-    <p className="text-gray-600">{description}</p>
-  </div>
-);
+import { ArrowRight } from "lucide-react";
+import Header from "@/components/Header";
+import AboutSection from "@/components/home/AboutSection";
+import ContactSection from "@/components/ContactSection";
+import UserTypeSelection from "@/components/home/UserTypeSelection";
+import Footer from "@/components/Footer";
 
 const LandingPage = () => {
-  const services = [
-    {
-      title: "IT Consulting",
-      description: "Expert guidance on technology strategy and implementation",
-      icon: "🖥️",
-    },
-    {
-      title: "Software Development",
-      description: "Custom software solutions tailored to your needs",
-      icon: "⚙️",
-    },
-    {
-      title: "Cloud Services",
-      description: "Scalable cloud infrastructure and management",
-      icon: "☁️",
-    },
-    {
-      title: "Cybersecurity",
-      description: "Comprehensive security solutions and monitoring",
-      icon: "🔒",
-    },
-  ];
-
   return (
     <div className="h-screen overflow-y-auto snap-y snap-mandatory">
       <Header className="fixed top-0 left-0 right-0 z-50" />

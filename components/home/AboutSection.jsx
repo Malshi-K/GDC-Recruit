@@ -4,7 +4,7 @@ import { CheckCircle, Check } from 'lucide-react';
 const AboutSection = () => {
   return (
     <section className="min-h-screen relative snap-start bg-white">
-      <div className="container mx-auto px-4 lg:px-8 py-20 flex items-center">
+      <div className="container mx-auto px-4 lg:px-8 py-28 flex items-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Image */}
           <div className="relative">

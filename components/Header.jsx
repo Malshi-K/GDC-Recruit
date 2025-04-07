@@ -37,7 +37,9 @@ const Header = () => {
     return pathname === link || pathname.startsWith(`${link}/`);
   };
 
-  const isJobSeekersActive = pathname.startsWith('/job-seekers');
+  // Check if any job-seekers related page is active
+  const isJobSeekersActive = pathname.includes('/job-seekers/caregivers') || 
+                             pathname.includes('/job-seekers/nurses');
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -86,18 +88,17 @@ const Header = () => {
                   About
                 </a>
                 
-                {/* Job Seekers Dropdown - Opens on hover */}
+                {/* Job Seekers Dropdown - Only dropdown, no direct page */}
                 <div className="relative group">
-                  <a 
-                    href="/job-seekers" 
-                    className={`relative flex items-center text-gray-600 hover:text-primary-500 transition-colors px-3 py-4 ${
+                  <div
+                    className={`relative flex items-center text-gray-600 hover:text-primary-500 transition-colors px-3 py-4 cursor-pointer ${
                       isJobSeekersActive ? 'text-primary-500' : ''
                     }`}
                   >
                     {isJobSeekersActive && <div className="absolute top-0 left-0 right-0 h-1 bg-primary-500 rounded-b-sm"></div>}
                     Job Seekers
                     <ChevronDown size={16} className="ml-1" />
-                  </a>
+                  </div>
                   
                   {/* Dropdown that appears on hover */}
                   <div className="absolute left-0 mt-0 w-48 bg-white rounded-md shadow-lg py-1 z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
@@ -190,7 +191,7 @@ const Header = () => {
                   About
                 </a>
                 
-                {/* Mobile Job Seekers Dropdown */}
+                {/* Mobile Job Seekers Dropdown - Only dropdown, no direct page */}
                 <div>
                   <button
                     onClick={toggleMobileDropdown}
