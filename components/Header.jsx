@@ -51,13 +51,17 @@ const Header = () => {
         <div className={`${
           isScrolled ? 'px-6' : 'bg-white rounded-full shadow-md px-6 mx-4'
         }`}>
-          <div className="flex justify-between items-center h-16">
+          <div className={`flex justify-between items-center transition-all duration-300 ${
+            isScrolled ? 'h-16' : 'h-20'
+          }`}>
             {/* Logo */}
             <div className="flex items-center pr-4">
               <div className="flex items-center">
-                <div className="w-32 h-12 flex items-center justify-center overflow-hidden">
+                <div className={`flex items-center justify-center overflow-hidden transition-all duration-300 ${
+                  isScrolled ? 'w-36 h-14' : 'w-44 h-16'
+                }`}>
                   <img 
-                    src="/images/logo.webp" 
+                    src="/images/logo.png" 
                     alt="Recruitment Logo"
                     className="w-full h-full object-contain"
                   />
