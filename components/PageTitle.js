@@ -68,9 +68,9 @@ const PageTitle = () => {
   const greenColors = [
     "#e6f2e4", // primary-50
     "#000000", // primary-100
-    "#1f7e10", // primary-200
-    "#19750d", // primary-50
-    "#146c0a", // primary-50
+    "#589a8e", // primary-200
+    "#00ba8e", // primary-50
+    "#216365", // primary-50
   ];
 
   useEffect(() => {

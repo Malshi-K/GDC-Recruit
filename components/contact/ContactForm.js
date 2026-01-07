@@ -43,8 +43,6 @@ const ContactForm = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left Column - Form */}
           <div>
-           
-
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
@@ -53,7 +51,7 @@ const ContactForm = () => {
                   value={formData.firstName}
                   onChange={handleChange}
                   placeholder="First Name"
-                  className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
+                  className="w-full p-4 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
                   required
                 />
 
@@ -63,7 +61,7 @@ const ContactForm = () => {
                   value={formData.lastName}
                   onChange={handleChange}
                   placeholder="Last Name"
-                  className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
+                  className="w-full p-4 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
                   required
                 />
               </div>
@@ -75,7 +73,7 @@ const ContactForm = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Email"
-                  className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
+                  className="w-full p-4 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
                   required
                 />
 
@@ -85,7 +83,7 @@ const ContactForm = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Phone"
-                  className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
+                  className="w-full p-4 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
                 />
               </div>
 
@@ -95,12 +93,10 @@ const ContactForm = () => {
                 onChange={handleChange}
                 placeholder="Write your message here"
                 rows="5"
-                className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
+                className="w-full p-4 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
                 required
               ></textarea>
 
-              
-            
               <div>
                 <button
                   type="submit"
@@ -124,7 +120,10 @@ const ContactForm = () => {
             </div>
 
             <div className="space-y-8">
-              <a href="tel:+64225945951" className="flex items-center gap-6 group hover:opacity-80 transition-opacity">
+              <a
+                href="tel:+64225945951"
+                className="flex items-center gap-6 group hover:opacity-80 transition-opacity"
+              >
                 <div className="w-14 h-14 bg-primary-100 rounded-md flex items-center justify-center flex-shrink-0">
                   <Phone className="text-white w-6 h-6" />
                 </div>
@@ -136,7 +135,10 @@ const ContactForm = () => {
                 </div>
               </a>
 
-              <a href="mailto:hire@gdcgroup.co.nz" className="flex items-center gap-6 group hover:opacity-80 transition-opacity">
+              <a
+                href="mailto:hire@gdcgroup.co.nz"
+                className="flex items-center gap-6 group hover:opacity-80 transition-opacity"
+              >
                 <div className="w-14 h-14 bg-primary-100 rounded-md flex items-center justify-center flex-shrink-0">
                   <Mail className="text-white w-6 h-6" />
                 </div>
@@ -148,7 +150,12 @@ const ContactForm = () => {
                 </div>
               </a>
 
-              <a href="https://www.facebook.com/gdcrecruit" target="_blank" rel="noopener noreferrer" className="flex items-center gap-6 group hover:opacity-80 transition-opacity">
+              <a
+                href="https://www.facebook.com/gdcrecruit"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-6 group hover:opacity-80 transition-opacity"
+              >
                 <div className="w-14 h-14 bg-primary-100 rounded-md flex items-center justify-center flex-shrink-0">
                   <Facebook className="text-white w-6 h-6" />
                 </div>
@@ -156,9 +163,7 @@ const ContactForm = () => {
                   <h3 className="font-semibold text-lg mb-1 text-primary-100">
                     Follow Us on
                   </h3>
-                  <p className="text-primary-100">
-                    Facebook
-                  </p>
+                  <p className="text-primary-100">Facebook</p>
                 </div>
               </a>
             </div>

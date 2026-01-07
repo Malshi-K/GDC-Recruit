@@ -64,7 +64,7 @@ const TestimonialForm = () => {
                   value={formData.firstName}
                   onChange={handleChange}
                   placeholder="First Name"
-                  className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
+                  className="w-full p-4 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
                   required
                 />
 
@@ -74,7 +74,7 @@ const TestimonialForm = () => {
                   value={formData.lastName}
                   onChange={handleChange}
                   placeholder="Last Name"
-                  className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
+                  className="w-full p-4 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
                   required
                 />
               </div>
@@ -86,7 +86,7 @@ const TestimonialForm = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Email"
-                  className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
+                  className="w-full p-4 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
                   required
                 />
 
@@ -96,7 +96,7 @@ const TestimonialForm = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Phone"
-                  className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
+                  className="w-full p-4 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
                 />
               </div>
 
@@ -106,11 +106,11 @@ const TestimonialForm = () => {
                 onChange={handleChange}
                 placeholder="Write your review here"
                 rows="5"
-                className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
+                className="w-full p-4 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
                 required
               ></textarea>
 
-              <div className="p-4 bg-primary-50 rounded-md border border-primary-200">
+              <div className="p-4 rounded-md border border-primary-200">
                 <p className="mb-2 font-medium text-gray-600">
                   Would you recommend us to your friends?
                 </p>
@@ -146,7 +146,7 @@ const TestimonialForm = () => {
                 onChange={handleChange}
                 placeholder="Anything else you would like to add?"
                 rows="4"
-                className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
+                className="w-full p-4 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
               ></textarea>
 
               <div>
