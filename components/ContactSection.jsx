@@ -45,7 +45,7 @@ const ContactSection = () => {
                     </label>
                     <input
                       type="text"
-                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary-500"
+                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary-200"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -56,7 +56,7 @@ const ContactSection = () => {
                     </label>
                     <input
                       type="email"
-                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary-500"
+                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary-200"
                       placeholder="Enter your email"
                     />
                   </div>
@@ -67,7 +67,7 @@ const ContactSection = () => {
                     </label>
                     <input
                       type="tel"
-                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary-500"
+                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary-200"
                       placeholder="Enter your phone number"
                     />
                   </div>
@@ -76,14 +76,14 @@ const ContactSection = () => {
                     <label className="block text-gray-700 mb-2">Message</label>
                     <textarea
                       rows={4}
-                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary-500 resize-none"
+                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary-200 resize-none"
                       placeholder="Tell us about your project"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-primary-600 text-white py-3 px-6 rounded-full hover:bg-primary-700 transition-colors duration-200 font-medium mt-2"
+                    className="w-full bg-primary-100 text-white py-3 px-6 rounded-full hover:bg-primary-100 transition-colors duration-200 font-medium mt-2"
                   >
                     Submit
                   </button>

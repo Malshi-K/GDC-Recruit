@@ -101,7 +101,7 @@ const ContentSection = () => {
   const renderRequirementItem = (item, index) => (
     <div key={index} className="flex items-start gap-4 p-5 bg-gray-50 rounded-xl border border-gray-100 transition-all hover:shadow-md">
       <div className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-        <Check className="text-primary-600 w-5 h-5" />
+        <Check className="text-primary-100 w-5 h-5" />
       </div>
       <p className="text-gray-700 font-medium py-1">
         {item}
@@ -114,7 +114,7 @@ const ContentSection = () => {
     <div key={index} className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
       <div className="flex items-start gap-4">
         <div className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-          <Check className="text-primary-600 w-5 h-5" />
+          <Check className="text-primary-100 w-5 h-5" />
         </div>
         <div>
           <h3 className="font-semibold text-lg mb-2 text-gray-800">

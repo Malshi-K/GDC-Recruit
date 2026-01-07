@@ -35,12 +35,12 @@ const CenteredTitleDescription = () => {
     <div className="container mx-auto px-4 py-8 md:py-12 lg:py-15">
       <div className="max-w-5xl mx-auto text-center">
         {/* Title */}
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight text-primary-500">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight text-primary-200">
           {content.title}
         </h1>
 
         {/* Description */}
-        <p className="text-base md:text-lg leading-relaxed text-primary-500">
+        <p className="text-base md:text-lg leading-relaxed text-primary-200">
           {content.description}
         </p>
       </div>

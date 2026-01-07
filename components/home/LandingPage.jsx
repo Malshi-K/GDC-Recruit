@@ -4,11 +4,10 @@ import Header from "@/components/Header";
 import AboutSection from "@/components/home/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import UserTypeSelection from "@/components/home/UserTypeSelection";
-import Footer from "@/components/Footer";
 
 const LandingPage = () => {
   return (
-    <div className="h-screen overflow-y-auto snap-y snap-mandatory">
+    <div>
       <Header className="fixed top-0 left-0 right-0 z-50" />
 
       {/* Hero Section */}
@@ -24,15 +23,15 @@ const LandingPage = () => {
           }}
         >
           {/* Overlay with gradient */}
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-300/80 to-white/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-50/80 to-white/50" />
         </div>
 
         {/* Background Shape - Extended and repositioned */}
-        <div className="absolute -left-24 top-0 h-screen w-1/2 bg-primary-500 transform skew-x-12 md:block hidden" />
+        <div className="absolute -left-24 top-0 h-screen w-1/2 bg-primary-200 transform skew-x-12 md:block hidden" />
 
         {/* Small Decorative Shapes */}
-        <div className="absolute left-[10%] top-[10%] w-8 h-8 border-4 border-primary-500 rounded-full z-10" />
-        <div className="absolute left-[30%] top-[40%] w-4 h-4 bg-primary-500 rounded-full z-10" />
+        <div className="absolute left-[10%] top-[10%] w-8 h-8 border-4 border-primary-200 rounded-full z-10" />
+        <div className="absolute left-[30%] top-[40%] w-4 h-4 bg-primary-200 rounded-full z-10" />
 
         {/* Background Patterns */}
         <div
@@ -55,7 +54,7 @@ const LandingPage = () => {
             </div>
             <div className="z-20">
               <div className="relative max-w-xl p-8">
-                <h2 className="text-primary-800 text-lg font-semibold mb-4">
+                <h2 className="text-primary-200 text-lg font-semibold mb-4">
                   WELCOME TO GDC RECRUITMENT LTD
                 </h2>
                 <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-gray-900">
@@ -66,7 +65,7 @@ const LandingPage = () => {
                   employees with quality as our highest priority.
                 </p>
                 <div className="flex gap-4">
-                  <button className="bg-primary-600 text-white px-8 py-3 rounded-md flex items-center gap-2 hover:bg-primary-700 transition-colors group">
+                  <button className="bg-primary-100 text-white px-8 py-3 rounded-md flex items-center gap-2 hover:bg-primary-100 transition-colors group">
                     Get In Touch
                     <ArrowRight
                       className="group-hover:translate-x-1 transition-transform"
@@ -91,9 +90,6 @@ const LandingPage = () => {
 
       {/* Contact Section */}
       <ContactSection />
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 };

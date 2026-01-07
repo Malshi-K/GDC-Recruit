@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, ArrowUpRight } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-primary-800 snap-start max-w-7xl m-auto">
+    <footer className="bg-white text-primary-100 snap-start max-w-7xl m-auto">
       <div className="container mx-auto px-4 lg:px-8 py-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Logo and Info */}
@@ -75,14 +75,14 @@ const Footer = () => {
                 placeholder="Your email"
                 className="bg-white/20 text-white px-3 py-2 rounded-l-md focus:outline-none flex-grow text-sm"
               />
-              <button className="bg-primary-500 text-white px-4 py-2 rounded-r-md hover:bg-primary-600 transition-colors">
+              <button className="bg-primary-200 text-white px-4 py-2 rounded-r-md hover:bg-primary-100 transition-colors">
                 Subscribe
               </button>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-primary-700 mt-8 pt-4 text-center text-gray-500 text-sm">
+        <div className="border-t border-primary-100 mt-8 pt-4 text-center text-gray-500 text-sm">
           <p>
             &copy; {new Date().getFullYear()} GDC Digital Solutions. All rights
             reserved.

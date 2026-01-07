@@ -69,8 +69,8 @@ const PageTitle = () => {
     "#e6f2e4", // primary-50
     "#000000", // primary-100
     "#1f7e10", // primary-200
-    "#19750d", // primary-300
-    "#146c0a", // primary-400
+    "#19750d", // primary-50
+    "#146c0a", // primary-50
   ];
 
   useEffect(() => {
@@ -179,7 +179,7 @@ const PageTitle = () => {
       <div className="relative z-20 flex h-full flex-col items-center justify-center px-4 text-white">
         <div className="max-w-4xl text-center">
           {/* Subtitle */}
-          <div className="mb-4 inline-block border-b border-t border-primary-400 px-6 py-2 text-sm font-medium tracking-widest">
+          <div className="mb-4 inline-block border-b border-t border-primary-50 px-6 py-2 text-sm font-medium tracking-widest">
             {subtitle}
           </div>
 

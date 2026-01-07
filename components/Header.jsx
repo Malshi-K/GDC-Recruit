@@ -74,32 +74,32 @@ const Header = () => {
               <div className="flex items-center justify-center gap-8 w-full max-w-2xl">
                 <a 
                   href="/" 
-                  className={`relative text-gray-600 hover:text-primary-500 transition-colors px-2 py-4 ${
-                    isActive('/') ? 'text-primary-500' : ''
+                  className={`relative text-gray-600 hover:text-primary-200 transition-colors px-2 py-4 ${
+                    isActive('/') ? 'text-primary-200' : ''
                   }`}
                 >
-                  {isActive('/') && <div className="absolute top-0 left-0 right-0 h-1 bg-primary-500 rounded-b-sm"></div>}
+                  {isActive('/') && <div className="absolute top-0 left-0 right-0 h-1 bg-primary-200 rounded-b-sm"></div>}
                   Home
                 </a>
                 
                 <a 
                   href="/about" 
-                  className={`relative text-gray-600 hover:text-primary-500 transition-colors px-3 py-4 ${
-                    isActive('/about') ? 'text-primary-500' : ''
+                  className={`relative text-gray-600 hover:text-primary-200 transition-colors px-3 py-4 ${
+                    isActive('/about') ? 'text-primary-200' : ''
                   }`}
                 >
-                  {isActive('/about') && <div className="absolute top-0 left-0 right-0 h-1 bg-primary-500 rounded-b-sm"></div>}
+                  {isActive('/about') && <div className="absolute top-0 left-0 right-0 h-1 bg-primary-200 rounded-b-sm"></div>}
                   About
                 </a>
                 
                 {/* Job Seekers Dropdown - Only dropdown, no direct page */}
                 <div className="relative group">
                   <div
-                    className={`relative flex items-center text-gray-600 hover:text-primary-500 transition-colors px-3 py-4 cursor-pointer ${
-                      isJobSeekersActive ? 'text-primary-500' : ''
+                    className={`relative flex items-center text-gray-600 hover:text-primary-200 transition-colors px-3 py-4 cursor-pointer ${
+                      isJobSeekersActive ? 'text-primary-200' : ''
                     }`}
                   >
-                    {isJobSeekersActive && <div className="absolute top-0 left-0 right-0 h-1 bg-primary-500 rounded-b-sm"></div>}
+                    {isJobSeekersActive && <div className="absolute top-0 left-0 right-0 h-1 bg-primary-200 rounded-b-sm"></div>}
                     Job Seekers
                     <ChevronDown size={16} className="ml-1" />
                   </div>
@@ -110,8 +110,8 @@ const Header = () => {
                       href="/job-seekers/caregivers" 
                       className={`block px-4 py-2 text-sm ${
                         isActive('/job-seekers/caregivers') 
-                          ? 'text-primary-500 bg-gray-50' 
-                          : 'text-gray-700 hover:bg-gray-100 hover:text-primary-500'
+                          ? 'text-primary-200 bg-gray-50' 
+                          : 'text-gray-700 hover:bg-gray-100 hover:text-primary-200'
                       }`}
                     >
                       Caregivers
@@ -120,8 +120,8 @@ const Header = () => {
                       href="/job-seekers/nurses" 
                       className={`block px-4 py-2 text-sm ${
                         isActive('/job-seekers/nurses') 
-                          ? 'text-primary-500 bg-gray-50' 
-                          : 'text-gray-700 hover:bg-gray-100 hover:text-primary-500'
+                          ? 'text-primary-200 bg-gray-50' 
+                          : 'text-gray-700 hover:bg-gray-100 hover:text-primary-200'
                       }`}
                     >
                       Nurses
@@ -131,21 +131,21 @@ const Header = () => {
                 
                 <a 
                   href="/rate-our-work" 
-                  className={`relative text-gray-600 hover:text-primary-500 transition-colors px-3 py-4 ${
-                    isActive('/rate-our-work') ? 'text-primary-500' : ''
+                  className={`relative text-gray-600 hover:text-primary-200 transition-colors px-3 py-4 ${
+                    isActive('/rate-our-work') ? 'text-primary-200' : ''
                   }`}
                 >
-                  {isActive('/rate-our-work') && <div className="absolute top-0 left-0 right-0 h-1 bg-primary-500 rounded-b-sm"></div>}
+                  {isActive('/rate-our-work') && <div className="absolute top-0 left-0 right-0 h-1 bg-primary-200 rounded-b-sm"></div>}
                   Rate Our Work
                 </a>
                 
                 <a 
                   href="/contact" 
-                  className={`relative text-gray-600 hover:text-primary-500 transition-colors px-3 py-4 ${
-                    isActive('/contact') ? 'text-primary-500' : ''
+                  className={`relative text-gray-600 hover:text-primary-200 transition-colors px-3 py-4 ${
+                    isActive('/contact') ? 'text-primary-200' : ''
                   }`}
                 >
-                  {isActive('/contact') && <div className="absolute top-0 left-0 right-0 h-1 bg-primary-500 rounded-b-sm"></div>}
+                  {isActive('/contact') && <div className="absolute top-0 left-0 right-0 h-1 bg-primary-200 rounded-b-sm"></div>}
                   Get In Touch
                 </a>
               </div>
@@ -153,7 +153,7 @@ const Header = () => {
 
             {/* Connect Button */}
             <div className="hidden md:flex items-center pl-4">
-              <button className="bg-primary-500 text-white px-6 py-2 rounded-full hover:bg-primary-600 transition-colors">
+              <button className="bg-primary-200 text-white px-6 py-2 rounded-full hover:bg-primary-100 transition-colors">
                 Sign In
               </button>
             </div>
@@ -177,8 +177,8 @@ const Header = () => {
                   href="/" 
                   className={`block px-3 py-2 rounded-md ${
                     isActive('/') 
-                      ? 'text-primary-500 bg-gray-50' 
-                      : 'text-gray-600 hover:text-primary-500 hover:bg-gray-50'
+                      ? 'text-primary-200 bg-gray-50' 
+                      : 'text-gray-600 hover:text-primary-200 hover:bg-gray-50'
                   }`}
                 >
                   Home
@@ -188,8 +188,8 @@ const Header = () => {
                   href="/about" 
                   className={`block px-3 py-2 rounded-md ${
                     isActive('/about') 
-                      ? 'text-primary-500 bg-gray-50' 
-                      : 'text-gray-600 hover:text-primary-500 hover:bg-gray-50'
+                      ? 'text-primary-200 bg-gray-50' 
+                      : 'text-gray-600 hover:text-primary-200 hover:bg-gray-50'
                   }`}
                 >
                   About
@@ -201,8 +201,8 @@ const Header = () => {
                     onClick={toggleMobileDropdown}
                     className={`flex items-center justify-between w-full px-3 py-2 rounded-md ${
                       isJobSeekersActive 
-                        ? 'text-primary-500 bg-gray-50' 
-                        : 'text-gray-600 hover:text-primary-500 hover:bg-gray-50'
+                        ? 'text-primary-200 bg-gray-50' 
+                        : 'text-gray-600 hover:text-primary-200 hover:bg-gray-50'
                     }`}
                   >
                     <span>Job Seekers</span>
@@ -219,8 +219,8 @@ const Header = () => {
                         href="/job-seekers/caregivers" 
                         className={`block px-3 py-2 rounded-md ${
                           isActive('/job-seekers/caregivers') 
-                            ? 'text-primary-500 bg-gray-50' 
-                            : 'text-gray-600 hover:text-primary-500 hover:bg-gray-50'
+                            ? 'text-primary-200 bg-gray-50' 
+                            : 'text-gray-600 hover:text-primary-200 hover:bg-gray-50'
                         }`}
                       >
                         Caregivers
@@ -229,8 +229,8 @@ const Header = () => {
                         href="/job-seekers/nurses" 
                         className={`block px-3 py-2 rounded-md ${
                           isActive('/job-seekers/nurses') 
-                            ? 'text-primary-500 bg-gray-50' 
-                            : 'text-gray-600 hover:text-primary-500 hover:bg-gray-50'
+                            ? 'text-primary-200 bg-gray-50' 
+                            : 'text-gray-600 hover:text-primary-200 hover:bg-gray-50'
                         }`}
                       >
                         Nurses
@@ -243,8 +243,8 @@ const Header = () => {
                   href="/rate-our-work" 
                   className={`block px-3 py-2 rounded-md ${
                     isActive('/rate-our-work') 
-                      ? 'text-primary-500 bg-gray-50' 
-                      : 'text-gray-600 hover:text-primary-500 hover:bg-gray-50'
+                      ? 'text-primary-200 bg-gray-50' 
+                      : 'text-gray-600 hover:text-primary-200 hover:bg-gray-50'
                   }`}
                 >
                   Rate Our Work
@@ -254,15 +254,15 @@ const Header = () => {
                   href="/contact" 
                   className={`block px-3 py-2 rounded-md ${
                     isActive('/contact') 
-                      ? 'text-primary-500 bg-gray-50' 
-                      : 'text-gray-600 hover:text-primary-500 hover:bg-gray-50'
+                      ? 'text-primary-200 bg-gray-50' 
+                      : 'text-gray-600 hover:text-primary-200 hover:bg-gray-50'
                   }`}
                 >
                   Get In Touch
                 </a>
                 
                 <div className="mt-4">
-                  <button className="w-full bg-primary-500 text-white px-6 py-2 rounded-full hover:bg-primary-600 transition-colors">
+                  <button className="w-full bg-primary-200 text-white px-6 py-2 rounded-full hover:bg-primary-100 transition-colors">
                     Sign In
                   </button>
                 </div>

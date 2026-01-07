@@ -8,26 +8,26 @@ const RoleCard = ({ icon, title, description, link = "#" }) => {
       {/* Card content with top right border */}
       <div className="relative">
         {/* Top right border */}
-        <div className="absolute -top-2 right-0 w-28 h-20 border-t-2 border-r-2 border-primary-600 rounded-tr-3xl"></div>
+        <div className="absolute -top-2 right-0 w-28 h-20 border-t-2 border-r-2 border-primary-100 rounded-tr-3xl"></div>
 
         {/* Icon */}
-        <div className="bg-primary-600 text-white w-16 h-16 rounded-lg flex items-center justify-center shadow-xl mb-4">
+        <div className="bg-primary-100 text-white w-16 h-16 rounded-lg flex items-center justify-center shadow-xl mb-4">
           {icon}
         </div>
-        <h3 className="text-xl font-bold mb-3 text-primary-600">{title}</h3>
+        <h3 className="text-xl font-bold mb-3 text-primary-100">{title}</h3>
         <p className="text-gray-600 mb-6">{description}</p>
 
         <div className="relative">
           <a
             href={link}
-            className="inline-flex items-center text-primary-600 font-medium"
+            className="inline-flex items-center text-primary-100 font-medium"
           >
             Find here
             <ArrowRight size={16} className="ml-2" />
           </a>
 
           {/* Bottom left border */}
-          <div className="absolute -bottom-6 -left-6 w-28 h-20 border-l-2 border-b-2 border-primary-600 rounded-bl-3xl"></div>
+          <div className="absolute -bottom-6 -left-6 w-28 h-20 border-l-2 border-b-2 border-primary-100 rounded-bl-3xl"></div>
         </div>
       </div>
     </div>
@@ -103,7 +103,7 @@ const UserTypeSelection = ({ roles = [] }) => {
   return (
     <section className="h-screen relative snap-start flex items-center bg-white">
       <div className="container mx-auto px-4 lg:px-8">
-        <h2 className="text-4xl font-bold text-center mb-16 text-primary-700">
+        <h2 className="text-4xl font-bold text-center mb-16 text-primary-100">
           Choose Your Role
         </h2>
 

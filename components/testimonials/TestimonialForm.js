@@ -48,10 +48,10 @@ const TestimonialForm = () => {
           {/* Left Column - Form */}
           <div>
             <div className="mb-6">
-              <h3 className="text-primary-600 font-medium uppercase tracking-wider">
+              <h3 className="text-primary-100 font-medium uppercase tracking-wider">
                 SEND US YOUR TESTIMONIAL
               </h3>
-              <h2 className="text-4xl font-bold text-primary-900 mt-1">
+              <h2 className="text-4xl font-bold text-primary-100 mt-1">
                 Feel free to write
               </h2>
             </div>
@@ -64,7 +64,7 @@ const TestimonialForm = () => {
                   value={formData.firstName}
                   onChange={handleChange}
                   placeholder="First Name"
-                  className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-500 text-primary-700"
+                  className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
                   required
                 />
 
@@ -74,7 +74,7 @@ const TestimonialForm = () => {
                   value={formData.lastName}
                   onChange={handleChange}
                   placeholder="Last Name"
-                  className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-500 text-primary-700"
+                  className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
                   required
                 />
               </div>
@@ -86,7 +86,7 @@ const TestimonialForm = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Email"
-                  className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-500 text-primary-700"
+                  className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
                   required
                 />
 
@@ -96,7 +96,7 @@ const TestimonialForm = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Phone"
-                  className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-500 text-primary-700"
+                  className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
                 />
               </div>
 
@@ -106,7 +106,7 @@ const TestimonialForm = () => {
                 onChange={handleChange}
                 placeholder="Write your review here"
                 rows="5"
-                className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-500 text-primary-700"
+                className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
                 required
               ></textarea>
 
@@ -122,7 +122,7 @@ const TestimonialForm = () => {
                       value="yes"
                       checked={formData.recommend === "yes"}
                       onChange={handleChange}
-                      className="h-4 w-4 text-primary-600 focus:ring-primary-500"
+                      className="h-4 w-4 text-primary-100 focus:ring-primary-200"
                     />
                     <span className="text-gray-700">Yes</span>
                   </label>
@@ -133,7 +133,7 @@ const TestimonialForm = () => {
                       value="no"
                       checked={formData.recommend === "no"}
                       onChange={handleChange}
-                      className="h-4 w-4 text-primary-600 focus:ring-primary-500"
+                      className="h-4 w-4 text-primary-100 focus:ring-primary-200"
                     />
                     <span className="text-gray-700">No</span>
                   </label>
@@ -146,13 +146,13 @@ const TestimonialForm = () => {
                 onChange={handleChange}
                 placeholder="Anything else you would like to add?"
                 rows="4"
-                className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-500 text-primary-700"
+                className="w-full p-4 bg-primary-50 rounded-md border border-primary-200 focus:outline-none focus:ring-1 focus:ring-primary-200 text-primary-100"
               ></textarea>
 
               <div>
                 <button
                   type="submit"
-                  className="bg-primary-600 text-white py-3 px-8 rounded-md hover:bg-primary-700 transition-colors font-medium"
+                  className="bg-primary-100 text-white py-3 px-8 rounded-md hover:bg-primary-100 transition-colors font-medium"
                 >
                   SUBMIT
                 </button>
@@ -163,15 +163,15 @@ const TestimonialForm = () => {
           {/* Right Column - Contact Info */}
           <div>
             <div className="mb-6">
-              <h3 className="text-primary-600 font-medium uppercase tracking-wider">
+              <h3 className="text-primary-100 font-medium uppercase tracking-wider">
                 NEED ANY HELP?
               </h3>
-              <h2 className="text-4xl font-bold text-primary-900 mt-1">
+              <h2 className="text-4xl font-bold text-primary-100 mt-1">
                 Get in touch with us
               </h2>
             </div>
 
-            <p className="text-primary-600 mb-10">
+            <p className="text-primary-100 mb-10">
               We value your feedback and testimonials. Your experience helps us
               improve our services and assists others in making informed
               decisions. Feel free to share your journey with us.
@@ -179,38 +179,38 @@ const TestimonialForm = () => {
 
             <div className="space-y-8">
               <a href="tel:+64225945951" className="flex items-center gap-6 group hover:opacity-80 transition-opacity">
-                <div className="w-14 h-14 bg-primary-900 rounded-md flex items-center justify-center flex-shrink-0">
+                <div className="w-14 h-14 bg-primary-100 rounded-md flex items-center justify-center flex-shrink-0">
                   <Phone className="text-white w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1 text-primary-900">
+                  <h3 className="font-semibold text-lg mb-1 text-primary-100">
                     Have any question?
                   </h3>
-                  <p className="text-primary-600">+64 22 594 5951</p>
+                  <p className="text-primary-100">+64 22 594 5951</p>
                 </div>
               </a>
 
               <a href="mailto:hire@gdcgroup.co.nz" className="flex items-center gap-6 group hover:opacity-80 transition-opacity">
-                <div className="w-14 h-14 bg-primary-900 rounded-md flex items-center justify-center flex-shrink-0">
+                <div className="w-14 h-14 bg-primary-100 rounded-md flex items-center justify-center flex-shrink-0">
                   <Mail className="text-white w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1 text-primary-900">
+                  <h3 className="font-semibold text-lg mb-1 text-primary-100">
                     Email
                   </h3>
-                  <p className="text-primary-600">hire@gdcgroup.co.nz</p>
+                  <p className="text-primary-100">hire@gdcgroup.co.nz</p>
                 </div>
               </a>
 
               <a href="https://www.facebook.com/gdcrecruit" target="_blank" rel="noopener noreferrer" className="flex items-center gap-6 group hover:opacity-80 transition-opacity">
-                <div className="w-14 h-14 bg-primary-900 rounded-md flex items-center justify-center flex-shrink-0">
+                <div className="w-14 h-14 bg-primary-100 rounded-md flex items-center justify-center flex-shrink-0">
                   <Facebook className="text-white w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1 text-primary-900">
+                  <h3 className="font-semibold text-lg mb-1 text-primary-100">
                     Follow Us on
                   </h3>
-                  <p className="text-primary-600">
+                  <p className="text-primary-100">
                     Facebook
                   </p>
                 </div>
